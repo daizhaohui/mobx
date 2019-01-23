@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "book-search": "AppName=bookSearch webpack-dev-server --config build/webpack.config.js --env"
+    "bookSearch": "AppName=bookSearch webpack-dev-server --config build/webpack.config.js --hot"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/daizhaohui/mobx#readme",
   "dependencies": {
+    "@babel/runtime": "^7.3.1",
+    "@babel/runtime-corejs2": "^7.3.1",
     "@material-ui/core": "^3.9.0",
     "@material-ui/icons": "^3.0.2",
+    "lodash": "^4.17.11",
     "mobx": "^5.8.0",
     "mobx-react": "^5.4.3",
     "mobx-react-devtools": "^6.0.3",
@@ -30,6 +33,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-async-to-generator": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",

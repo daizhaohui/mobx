@@ -33,5 +33,5 @@ module.exports = {
     open: "Google Chrome",
     hot: true
   },
-  devtool: "inline-source-map"
+  devtool: "source-map"
 };

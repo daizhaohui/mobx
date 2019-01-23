@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bookSearch": "AppName=bookSearch webpack-dev-server --config build/webpack.config.js --hot"
+    "bookSearch": "AppName=bookSearch webpack-dev-server --config build/webpack.config.js --hot",
+    "classModel": "AppName=classModel webpack-dev-server --config build/webpack.config.js --hot"
   },
   "repository": {
     "type": "git",

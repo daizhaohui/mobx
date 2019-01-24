@@ -1,5 +1,5 @@
 import WishlistExample from "../examples/wishlistExample";
-import { AppModelExample } from "../examples/stateTree";
+import { AppModelExample, IdentifiersExample } from "../examples/stateTree";
 
 function applyPathPrefix(chapters) {
   return chapters.map(ch => {
@@ -36,6 +36,11 @@ export const chapters = applyPathPrefix([
         title: "appModel",
         path: "/stateTree/appModel",
         component: AppModelExample
+      },
+      {
+        title: "IdentifiersExample",
+        path: "/stateTree/identifiers",
+        component: IdentifiersExample
       }
     ]
   }

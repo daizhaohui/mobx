@@ -52,7 +52,7 @@ const app = App.create({
 });
 
 @observer
-export default class AppModelExample extends React.Component {
+export default class IdentifiersExample extends React.Component {
   componentDidMount() {}
 
   toggle = () => {

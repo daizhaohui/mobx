@@ -1,4 +1,5 @@
 import WishlistExample from "../examples/wishlistExample";
+import { AppModelExample } from "../examples/stateTree";
 
 function applyPathPrefix(chapters) {
   return chapters.map(ch => {
@@ -18,48 +19,24 @@ function applyPathPrefix(chapters) {
 export const chapters = applyPathPrefix([
   {
     chapter: 1,
-    title: "Crafting the Observable tree",
+    title: "chapter1",
     examples: [
       {
         title: "Wishlist:classModel",
         path: "/wishlist",
         component: WishlistExample
       }
-      // {
-      //   title: "Computed Decorator",
-      //   path: "/computed-decorator",
-      //   component: ComputedDecoratorExample
-      // },
-      // {
-      //   title: "Computed Equality",
-      //   path: "/computed-equality",
-      //   component: ComputedEqualityExample
-      // },
-      // {
-      //   title: "Decorate",
-      //   path: "/decorate",
-      //   component: DecorateExample
-      // },
-      // {
-      //   title: "Extend Observable",
-      //   path: "/extend-observable",
-      //   component: ExtendObservableExample
-      // },
-      // {
-      //   title: "Observable Decorators",
-      //   path: "/observable-decorators",
-      //   component: ObservableDecorateExample
-      // },
-      // {
-      //   title: "Observable Ref",
-      //   path: "/observable-ref",
-      //   component: ObservableRefExample
-      // },
-      // {
-      //   title: "Observable Struct",
-      //   path: "/observable-struct",
-      //   component: ObservableStructExample
-      // }
+    ]
+  },
+  {
+    chapter: 2,
+    title: "stateTree",
+    examples: [
+      {
+        title: "appModel",
+        path: "/stateTree/appModel",
+        component: AppModelExample
+      }
     ]
   }
 ]);
